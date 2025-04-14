@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - Connor Cluett</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="main-nav">
+    <a href="index.html">Home</a><span>|</span>
+    <a href="projects.html">Projects</a><span>|</span>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <header class="main-header">
+    <h1>Projects</h1>
+    <p>This page highlights specific projects I've done while at <img src="../images-project/Syracuse_University_Horizontal_1Line_ORANGE_RGB.svg" alt="Syracuse University Logo" class="logo-img" ></p>
+    
+  </header>
+
+  <section class="projects-section">
+
+    <article class="project-card">
+      <h2>IST 387 – Energy Forecasting with SVM</h2>
+      <iframe src="https://www.youtube.com/embed/9pa_5XSPIs4?si=9KBPc8DI_bFLkSJZ" title="YouTube video player" frameborder="0" allowfullscreen loading="lazy"></iframe>
+      <div class="project-info">
+        <p>
+          We were assigned a dataset from an energy company in South Carolina focused on energy usage and temperatures during July. Using R and an SVM model, I simulated a +5°F scenario where 90% of days exceeded grid capacity. I recommended infrastructure upgrades and dynamic pricing to help mitigate risk. This was my first full data science project with machine learning.
+        </p>
+        <a class="data-link" href="https://www.youtube.com/watch?v=9pa_5XSPIs4" target="_blank">Link to Data</a>
+      </div>
+    </article>
+
+    <article class="project-card reverse">
+      <h2>IST 356 – Sports Betting Odds API</h2>
+      <img src="../images-project/IST-356-proj.png" alt="IST 356 Project Screenshot" />
+      <div class="project-info">
+        <p>
+          I built a Python pipeline that pulls JSON data from a sports odds API and displays it in a Streamlit app. The project compares lines from FanDuel, DraftKings, and other bookmakers to show which site offers the best odds. It taught me how to handle APIs, clean data, and build dashboards for real users.
+        </p>
+        <a class="data-link" href="#">Link to Data</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <h2>IST 421 – LinkedIn Job Analysis</h2>
+      <img src="../images-project/WorkingProjectAI-1.png" alt="IST 421 Poster" />
+      <img src="../images-project/IST-421-photo.jpg" alt="Presenting at Poster Day" />
+      <div class="project-info">
+        <p>
+          I scraped 30K+ job postings from LinkedIn, cleaned them in R, and visualized patterns in salary and location. Remote jobs had higher average pay, and urban regions had more opportunities. I presented this at Poster Day and honed both my data storytelling and public speaking skills.
+        </p>
+        <a class="data-link" href="#">Link to Data</a>
+      </div>
+    </article>
+
+  </section>
+
+</body>
+</html>
