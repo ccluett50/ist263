@@ -3,39 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
   <title>Contact - Connor Cluett</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-new.css">
 </head>
 <body>
-  <div class="container">
-    <nav>
-      <a href="index.html">Home</a><span>|</span>
-      <a href="projects.html">Projects</a><span>|</span>
-      <a href="contact.html">Contact</a>
-    </nav>
 
-    <header>
-      <h1>Contact Me</h1>
-    </header>
+  <nav class="main-nav">
+    <a href="index.html">Home</a><span>|</span>
+    <a href="projects.html">Projects</a><span>|</span>
+    <a href="contact.html">Contact</a>
+  </nav>
 
+  <header class="main-header">
+    <h1>Contact Me</h1>
+    <p>If you'd like to get in touch, feel free to reach out by phone, email, LinkedIn, or leave feedback using the survey below!</p>
+  </header>
+
+  <div class="contact-page">
     <section class="contact-info">
-      <p>Phone: 508-614-0930</p>
-      <p>Email: <a href="mailto:cpcluett@syr.edu">cpcluett@syr.edu</a></p>
-      <p>Address: 910 Ackerman Avenue, Syracuse NY, 13210
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4184.673112123347!2d-76.1243926!3d43.0338521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f37170039dad%3A0x59bfaae90949c031!2s910%20Ackerman%20Ave%2C%20Syracuse%2C%20NY%2013210!5e1!3m2!1sen!2sus!4v1743364103291!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </p>
-      <img src="../images-project/LI-Logo.png" alt="LinkedIn Logo" width="300px">
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/connorcluett/">Connect with me</a></p>
-      <p><a href="../images-project/ConnorCluettResumeSpring2025.pdf" download>Download My Resume</a></p>
+      <p><strong>Phone:</strong> 508-614-0930</p>
+      <p><strong>Email:</strong> <a href="mailto:cpcluett@syr.edu">cpcluett@syr.edu</a></p>
+      <p><strong>Address:</strong> 910 Ackerman Avenue, Syracuse NY, 13210</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4184.673112123347!2d-76.1243926!3d43.0338521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f37170039dad%3A0x59bfaae90949c031!2s910%20Ackerman%20Ave%2C%20Syracuse%2C%20NY%2013210!5e1!3m2!1sen!2sus!4v1743364103291!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <img src="../images-project/LI-Logo.png" alt="LinkedIn Logo">
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/connorcluett/">Connect with me</a></p>
+      <p><a href="../images-project/ConnorCluett ResumeSpring2025.pdf" download>Download My Resume</a></p>
     </section>
 
     <section class="survey">
       <h2>Website Feedback Survey</h2>
       <form action="https://formspree.io/f/mdkelyol" method="post">
-        <label for="name">Your name:</label>
-        <input type="text" id="name" name="name"><br>
-        <label for="email">Your email:</label>
-        <input type="email" id="email" name="email"><br>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email">
+
         <label for="rating">Website Rating (1-5):</label>
         <select id="rating" name="rating">
           <option value="1">1</option>
@@ -43,12 +48,15 @@
           <option value="3">3</option>
           <option value="4">4</option>
           <option value="5">5</option>
-        </select><br>
-        <label for="suggestions">Suggestions:</label><br>
-        <textarea id="suggestions" name="suggestions"></textarea><br>
+        </select>
+
+        <label for="suggestions">Suggestions:</label>
+        <textarea id="suggestions" name="suggestions"></textarea>
+
         <button type="submit">Submit</button>
       </form>
     </section>
   </div>
+
 </body>
 </html>
