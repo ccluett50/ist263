@@ -342,6 +342,34 @@ footer {
   display: block;
 }
 
+/* Map and LinkedIn Section */
+.map-and-linkedin {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.map-and-linkedin iframe {
+  flex: 1 1 400px;
+  max-width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  border: none;
+}
+
+.linkedin-link {
+  flex: 1 1 300px;
+  font-size: 1.1rem;
+  color: #2B3A8B;
+}
+
+.linkedin-link p {
+  margin-bottom: 15px;
+}
+
+/* Survey Form */
 .survey {
   background-color: #F5F5F5;
   padding: 25px;
@@ -387,7 +415,7 @@ form button:hover {
   background-color: #4C68D7;
 }
 
-/* responsive project layout */
+/* responsive project and contact layout */
 @media only screen and (max-width: 767px) {
   .project-card img,
   .project-card iframe {
@@ -420,5 +448,15 @@ form button:hover {
     max-width: 80%;
     margin: 20px auto;
   }
+
+  .map-and-linkedin {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .map-and-linkedin iframe {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
 }
-/* 
