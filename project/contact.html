@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Connor Cluett</title>
+  <link rel="stylesheet" href="style-new.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <nav class="main-nav">
+    <a href="index.html">Home</a><span>|</span>
+    <a href="projects.html">Projects</a><span>|</span>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <header class="main-header">
+    <h1>Contact Me</h1>
+    <p>Feel free to email, message, or connect with me on LinkedIn!</p>
+  </header>
+
+  <section id="main-content" class="contact-page">
+    <div class="contact-info">
+      <div class="contact-flex">
+
+        <!-- Left side: address + map -->
+        <div class="contact-left">
+          <p><i class="fas fa-map-marker-alt"></i> 910 Ackerman Avenue, Syracuse NY, 13210</p>
+          <iframe
+            src="https://www.google.com/maps?q=910+Ackerman+Avenue,+Syracuse,+NY&output=embed"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <!-- Right side: 2x2 grid buttons -->
+        <div class="contact-right contact-grid">
+          <div class="contact-square">
+            <i class="fas fa-phone"></i>
+            <span>508-614-0930</span>
+          </div>
+          <a href="mailto:cpcluett@syr.edu" class="contact-square">
+            <i class="fas fa-envelope"></i>
+            <span>cpcluett@ syr.edu</span>
+          </a>
+          <a href="https://www.linkedin.com/in/connorcluett" target="_blank" class="contact-square">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="../images-project/ConnorCluett ResumeSpring2025.pdf" target="_blank" class="contact-square">
+            <i class="fas fa-file-download"></i>
+            <span>Resume</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section class="survey">
+      <h2>Quick Survey</h2>
+      <form action="https://formspree.io/f/mdkelyol" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="rating">Rate my website:</label>
+        <select id="rating" name="rating" required>
+          <option value="">Select One</option>
+          <option value="excellent">Excellent</option>
+          <option value="good">Good</option>
+          <option value="average">Average</option>
+          <option value="poor">Poor</option>
+        </select>
+
+        <label for="message">Comments:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </section>
+
+  <hr />
+  <footer>
+    <p>&copy; 2025 Connor Cluett</p>
+  </footer>
+
+</body>
+</html>
