@@ -9,28 +9,24 @@
 </head>
 <body>
 
-  <!-- Navigation -->
   <nav class="main-nav">
     <a href="index.html">Home</a><span>|</span>
     <a href="projects.html">Projects</a><span>|</span>
     <a href="contact.html">Contact</a>
   </nav>
 
-  <!-- Header -->
   <header class="main-header">
     <h1>Contact Me</h1>
-    <p>Feel free to reach out!</p>
+    <p>Feel free to email, message, or connect with me on LinkedIn!</p>
   </header>
 
-  <!-- Contact Info Section -->
   <section class="contact-page">
     <div class="contact-info">
       <div class="contact-flex">
 
-        <!-- Left Side: Phone and Map -->
+        <!-- Left side: address + map -->
         <div class="contact-left">
-          <p><i class="fas fa-phone"></i> <strong>Phone:</strong> 508-614-0930</p>
-          <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 910 Ackerman Avenue, Syracuse NY, 13210</p>
+          <p><i class="fas fa-map-marker-alt"></i> 910 Ackerman Avenue, Syracuse NY, 13210</p>
           <iframe
             src="https://www.google.com/maps?q=910+Ackerman+Avenue,+Syracuse,+NY&output=embed"
             allowfullscreen=""
@@ -39,49 +35,54 @@
           </iframe>
         </div>
 
-        <!-- Right Side: Contact Buttons -->
-        <div class="contact-right">
-          <a href="mailto:cpcluett@syr.edu" class="contact-button">
-            <i class="fas fa-envelope"></i> Email Me
+        <!-- Right side: 2x2 grid buttons -->
+        <div class="contact-right contact-grid">
+          <div class="contact-square">
+            <i class="fas fa-phone"></i>
+            <span>508-614-0930</span>
+          </div>
+          <a href="mailto:cpcluett@syr.edu" class="contact-square">
+            <i class="fas fa-envelope"></i>
+            <span>cpcluett@ syr.edu</span>
           </a>
-          <a href="https://www.linkedin.com/in/connorcluett" target="_blank" class="contact-button">
-            <i class="fab fa-linkedin"></i> Connect on LinkedIn
+          <a href="https://www.linkedin.com/in/connorcluett" target="_blank" class="contact-square">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
           </a>
-          <a href="../images-project/ConnorCluett ResumeSpring2025.pdf" target="_blank" class="contact-button">
-            <i class="fas fa-file-download"></i> Download My Resume
+          <a href="../images-project/ConnorCluett ResumeSpring2025.pdf" target="_blank" class="contact-square">
+            <i class="fas fa-file-download"></i>
+            <span>Resume</span>
           </a>
         </div>
-
       </div>
     </div>
 
-    <!-- Survey Form -->
     <section class="survey">
       <h2>Quick Survey</h2>
-      <form>
+      <form action="https://formspree.io/f/mdkelyol" method="POST">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" />
+        <input type="text" id="name" name="name" required />
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" />
+        <input type="email" id="email" name="email" required />
 
-        <label for="topic">Topic:</label>
-        <select id="topic" name="topic">
+        <label for="rating">Rate my website:</label>
+        <select id="rating" name="rating" required>
           <option value="">Select One</option>
-          <option value="project">Project Inquiry</option>
-          <option value="feedback">Site Feedback</option>
-          <option value="networking">Networking</option>
+          <option value="excellent">Excellent</option>
+          <option value="good">Good</option>
+          <option value="average">Average</option>
+          <option value="poor">Poor</option>
         </select>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5"></textarea>
+        <label for="message">Comments:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
         <button type="submit">Submit</button>
       </form>
     </section>
   </section>
 
-  <!-- Footer -->
   <hr />
   <footer>
     <p>&copy; 2025 Connor Cluett</p>

@@ -473,3 +473,39 @@ form button:hover {
     text-align: center;
   }
 }
+
+/* 2x2 Contact Button Grid with Icons and Text */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  gap: 12px 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-square {
+  background-color: #2B3A8B;
+  color: white;
+  width: 140px;
+  height: 140px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.contact-square:hover {
+  background-color: #4C68D7;
+  color: white;
+  text-decoration: none;
+}
+
+.contact-square i {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
